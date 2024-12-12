@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 600px;
+            height: 400px;
+            /* border: 1px red solid; */
+            /* background-color: #fa0; */
+            /* border-spacing: 5px; */
+            border-collapse: collapse;
+        }
+        /* 群組選取 */
+        td,th {
+            border: 1px red solid;
+            
+        }
+        td {
+            /* border: 1px red solid; */
+            background-color: #ffffda;
+            vertical-align: middle;
+            text-align: center;
+        }
+        th {
+            /* border: 1px red solid; */
+            background-color: #fff3b7;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>標題</th>
+            <th>標題</th>
+            <th>標題</th>
+            <th>標題</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td rowspan="3">D</td>
+        </tr>
+        <tr>
+            <td colspan="2">E</td>
+            <!-- <td>F</td> -->
+            <td>G</td>
+            <!-- <td>H</td> -->
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+            <!-- <td>L</td> -->
+        </tr>
+    </table>
+</body>
+</html>
