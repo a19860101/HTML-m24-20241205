@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap:wrap;
+
+            background-color: #ccc;
+        }
+        .box-1 {
+            width: calc(100% / 1);
+        }
+        .box-2 {
+            width: calc(100% / 2);
+        }
+        .box-3 {
+            width: calc(100% / 3);
+        }
+        .box-4 {
+            width: calc(100% / 4);
+        }
+        .box-5 {
+            width: calc(100% / 5);
+        }
+        .col-1 {width: calc(100% / 12 * 1);}
+        .col-2 {width: calc(100% / 12 * 2);}
+        .col-3 {width: calc(100% / 12 * 3);}
+        .col-4 {width: calc(100% / 12 * 4);}
+        .col-5 {width: calc(100% / 12 * 5);}
+        .col-6 {width: calc(100% / 12 * 6);}
+        .col-7 {width: calc(100% / 12 * 7);}
+        .col-8 {width: calc(100% / 12 * 8);}
+        .col-9 {width: calc(100% / 12 * 9);}
+        .col-10 {width: calc(100% / 12 * 10);}
+        .col-11 {width: calc(100% / 12 * 11);}
+        .col-12 {width: calc(100% / 12 * 12);}
+        .p-15 {
+            padding: 15px;
+        }
+        /* 屬性選取器 */
+        [class^="col"],[class^="box"]{
+            padding: 15px;
+        }
+        /* 
+            ^= 開頭
+            *= 包含
+            $= 結尾
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="col-3">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt provident in tenetur perspiciatis ipsa cumque sunt adipisci quis tempore enim quasi, id aliquam eligendi quisquam consequuntur, delectus quam eius?
+            </p>
+        </div>
+        <div class="col-6">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt provident in tenetur perspiciatis ipsa cumque sunt adipisci quis tempore enim quasi, id aliquam eligendi quisquam consequuntur, delectus quam eius?
+            </p>
+        </div>
+        <div class="col-3">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt provident in tenetur perspiciatis ipsa cumque sunt adipisci quis tempore enim quasi, id aliquam eligendi quisquam consequuntur, delectus quam eius?
+            </p>
+        </div>
+        <div class="col-4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt provident in tenetur perspiciatis ipsa cumque sunt adipisci quis tempore enim quasi, id aliquam eligendi quisquam consequuntur, delectus quam eius?
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box-2">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt placeat facere, nemo, repudiandae minus aut molestiae voluptatem, libero consectetur delectus dolorum modi porro iure excepturi id laboriosam quasi quaerat!
+            </p>
+        </div>
+        <div class="box-4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt placeat facere, nemo, repudiandae minus aut molestiae voluptatem, libero consectetur delectus dolorum modi porro iure excepturi id laboriosam quasi quaerat!
+            </p>
+        </div>
+        <div class="box-4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt placeat facere, nemo, repudiandae minus aut molestiae voluptatem, libero consectetur delectus dolorum modi porro iure excepturi id laboriosam quasi quaerat!
+            </p>
+        </div>
+        <div class="box-4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt placeat facere, nemo, repudiandae minus aut molestiae voluptatem, libero consectetur delectus dolorum modi porro iure excepturi id laboriosam quasi quaerat!
+            </p>
+        </div>
+        <div class="box-4">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt placeat facere, nemo, repudiandae minus aut molestiae voluptatem, libero consectetur delectus dolorum modi porro iure excepturi id laboriosam quasi quaerat!
+            </p>
+        </div>
+        <div class="box-2">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt placeat facere, nemo, repudiandae minus aut molestiae voluptatem, libero consectetur delectus dolorum modi porro iure excepturi id laboriosam quasi quaerat!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

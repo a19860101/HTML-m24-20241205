@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ccc;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            /* 
+                start, end, center
+                stretch, baseline
+            */
+
+            justify-content: space-between;
+            /* 
+                start, end, center
+                space-between, space-evenly, space-around
+            */
+
+        }
+        .col-6 {width: calc(100% / 12 * 6);}
+        .col-2 {width: calc(100% / 12 * 2);}
+        img {
+            width: 100%;
+        }
+        [class^="col"] {
+            padding: 15px;
+        }
+        .col-6 {
+            /* background-color: #ccc; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-6">
+            <img src="images/leaf.jpg" alt="">
+        </div>
+        <div class="col-6">
+            <h2>LEAF</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum doloremque dignissimos consectetur quia ipsa odit impedit eius? Tempora porro quasi a inventore sed odit, doloribus quo suscipit in? Voluptas, maxime.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-2">
+            <h2>title 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est optio quidem perspiciatis ut. Minus autem aut quis voluptas esse!
+            </p>
+        </div>
+        <div class="col-2">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est optio quidem perspiciatis ut. Minus autem aut quis voluptas esse!
+            </p>
+        </div>
+        <div class="col-2">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est optio quidem perspiciatis ut. Minus autem aut quis voluptas esse!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
