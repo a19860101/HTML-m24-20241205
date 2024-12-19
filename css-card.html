@@ -35,16 +35,27 @@
             border-radius: 10px;
             overflow: hidden;
 
+            transition: 300ms;
             
             /* box-shadow: 0px 6px 12px 2px #00000025; */
             /* h-offset v-offset 強度 擴散 顏色 */
+            /* box-shadow: 6px 6px 0 0 #ccc; */
+        }
+        .card:hover {
             box-shadow: 6px 6px 0 0 #ccc;
+
         }
         .card-img {
             width: 100%;
             aspect-ratio: 4 / 3;
             background-color: #ccc;
             overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
         }
         /* 巢狀選取器 */
         .card-body {
@@ -58,6 +69,23 @@
         /* .card-body h2 {
             margin-bottom: 10px;
         } */
+
+        .btn {
+            /* width: 100px; */
+            /* height: 40px; */
+            padding: 6px 20px;
+            background-color: #fa0;
+
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+
+            transition: 500ms;
+        }
+        .btn:hover {
+            background-color: #6bdfff;
+        }
     </style>
 </head>
 <body>
@@ -65,39 +93,42 @@
         <div class="col-4">
             <div class="card">
                 <div class="card-img">
-                    <img src="images/leaf2.jpg" alt="">
+                    <img src="https://picsum.photos/id/40/800/600" alt="">
                 </div>
                 <div class="card-body">
                     <h2>Hello</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rerum, atque maiores harum dolor aliquam!
                     </p>
+                    <a href="#" class="btn">More</a>
                 </div>
             </div>
         </div>
         <div class="col-4">
             <div class="card">
                 <div class="card-img">
-                    <img src="images/leaf2.jpg" alt="">
+                    <img src="https://picsum.photos/id/10/800/600" alt="">
                 </div>
                 <div class="card-body">
                     <h2>Hello</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rerum, atque maiores harum dolor aliquam!
                     </p>
+                    <a href="#" class="btn">More</a>
                 </div>
             </div>
         </div>
         <div class="col-4">
             <div class="card">
                 <div class="card-img">
-                    <img src="images/leaf2.jpg" alt="">
+                    <img src="https://picsum.photos/id/20/800/600" alt="">
                 </div>
                 <div class="card-body">
                     <h2>Hello</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rerum, atque maiores harum dolor aliquam!
                     </p>
+                    <a href="#" class="btn">More</a>
                 </div>
             </div>
         </div>
