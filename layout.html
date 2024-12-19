@@ -12,6 +12,9 @@
             padding: 0;
             box-sizing: border-box;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'fira sans','noto sans tc',sans-serif;
         }
@@ -20,8 +23,10 @@
             display: block;
         }
         nav {
+            position: fixed;
+            z-index: 9999;
             width: 100%;
-            background-color: #7EACB5;
+            background-color: #7eacb5c2;
             display: flex;
             justify-content: space-between;
             padding: 20px 15px;
@@ -38,7 +43,7 @@
         header {
             width: 100%;
             /* height: 500px; */
-            aspect-ratio: 21 / 9;
+            aspect-ratio: 16 / 9;
             /* background-color: #ccc;
             background-image: url('https://picsum.photos/id/40/1200/600');
             background-size: cover;
@@ -166,9 +171,9 @@
     <nav>
         <a href="#" class="nav-logo">Logo</a>
         <div class="nav-menu">
-            <a href="#" class="nav-link">關於</a>
-            <a href="#" class="nav-link">作品集</a>
-            <a href="#" class="nav-link">聯絡我</a>
+            <a href="#about" class="nav-link">關於</a>
+            <a href="#folio" class="nav-link">作品集</a>
+            <a href="#contact" class="nav-link">聯絡我</a>
         </div>
     </nav>
     <header>
